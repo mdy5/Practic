@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catalog</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+  <div class="container">
+    <h2 class="d-none" id="post-title" style="text-align: center; margin-bottom: 50px; margin-top: 100px;">Список постов</h2>
+
+    <!-- Spinner для загрузки -->
+    <div id="loading-spinner" class="d-flex justify-content-center" style="position: fixed; top: 50%; left: 50%">
+      <div class="spinner-border text-primary" role="status">
+        <span class="sr-only">Loading...</span>
+      </div>
+    </div>
+
+    <!-- Список постов -->
+    <div class="row d-none" id="post-list"></div>
+
+    <!-- Кнопка авторизации -->
+    <div class="d-none" id="auth-button-container" style="margin-top: 50px;">
+      <!-- Кнопка будет добавлена здесь через JS, если пользователь не авторизован -->
+    </div>
+  </div>
+
+  <script src="js/catalog.js" type="module"></script>
+</body>
+</html>
+
